@@ -14,9 +14,6 @@
     },
     "vaporview.promptLoadSettings": "Never",
     "vaporview.defaultAutoReload": true,
-    "files.associations": {
-      "*.vcd": "wavedump"
-    },
     "files.exclude": {
       "**/__pycache__": true
     }
