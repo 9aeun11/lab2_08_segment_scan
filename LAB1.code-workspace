@@ -12,7 +12,7 @@
     "workbench.editorAssociations": {
       "*.vcd": "vaporview.waveformViewer"
     },
-    "vaporview.promptLoadSettings": "Never",
+    "vaporview.promptLoadSettings": "Always",
     "vaporview.defaultAutoReload": true,
     "files.exclude": {
       "**/__pycache__": true
