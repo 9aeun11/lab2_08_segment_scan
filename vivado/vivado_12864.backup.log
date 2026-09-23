@@ -1,0 +1,246 @@
+INFO: [Common 17-3922] A valid Vivado Design Suite BASIC license has been detected. Your current license is active and will expire on 07-sep-2027.
+#-----------------------------------------------------------
+# Vivado v2026.1 (64-bit)
+# SW Build 6511674 on Tue Jun 16 11:02:23 MDT 2026
+# IP Build 6504888 on Tue Jun 09 09:05:25 MDT 2026
+# SharedData Build 6501428 on Mon Jun 08 17:34:18 MDT 2026
+# Start of session at: Wed Sep 16 14:44:45 2026
+# Process ID         : 12864
+# Current directory  : C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado
+# Command line       : vivado.exe -gui_launcher_event rodinguilauncherevent3528 C:\Users\gaeun\Desktop\lab2_08_segment_scan\vivado\lab2_segment_scan.xpr
+# Log file           : C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/vivado.log
+# Journal file       : C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado\vivado.jou
+# Running On         : 9aeun
+# Platform           : Windows 11
+# Operating System   : 26200
+# Processor Detail   : Intel(R) Core(TM) Ultra 5 225H
+# CPU Frequency      : 3686 MHz
+# CPU Physical cores : 14
+# CPU Logical cores  : 14
+# Host memory        : 16509 MB
+# Swap memory        : 17179 MB
+# Total Virtual      : 33688 MB
+# Available Virtual  : 13100 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.xpr
+INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-5713] Board part '' set for the project  is not found. BoardPart property will be unset. Please select board from latest repo build 
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/AMDDesignTools/2026.1/Vivado/data/ip'.
+open_project: Time (s): cpu = 00:00:33 ; elapsed = 00:00:20 . Memory (MB): peak = 1705.078 ; gain = 252.723
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Wed Sep 16 14:46:02 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_segment_scan8'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_segment_scan8' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_segment_scan8_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gaeun/Desktop/lab2_08_segment_scan/src/segment_scan8.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module segment_scan8
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/gaeun/Desktop/lab2_08_segment_scan/sim/tb_segment_scan8.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_segment_scan8
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_segment_scan8_behav xil_defaultlib.tb_segment_scan8 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_segment_scan8_behav xil_defaultlib.tb_segment_scan8 xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.segment_scan8
+Compiling module xil_defaultlib.tb_segment_scan8
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_segment_scan8_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_segment_scan8_behav -key {Behavioral:sim_1:Functional:tb_segment_scan8} -tclbatch {tb_segment_scan8.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_segment_scan8.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_segment_scan8_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 1723.426 ; gain = 18.348
+set_property -name {xsim.simulate.runtime} -value {1306ns} -objects [get_filesets sim_1]
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation  -mode behavioral
+INFO: [Vivado 12-25911] Executing simulation for 'XSim' simulator
+INFO: [Vivado 12-28535] Process started - Wed Sep 16 14:47:56 2026
+
+INFO: [Vivado 12-12493] Simulation top is 'tb_segment_scan8'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'C:/AMDDesignTools/2026.1/Vivado/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'tb_segment_scan8' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tb_segment_scan8_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.sim/sim_1/behav/xsim'
+"xelab --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_segment_scan8_behav xil_defaultlib.tb_segment_scan8 xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2026.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: C:/AMDDesignTools/2026.1/Vivado/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_segment_scan8_behav xil_defaultlib.tb_segment_scan8 xil_defaultlib.glbl -log elaborate.log 
+INFO: [XSIM 43-3493] Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_segment_scan8_behav -key {Behavioral:sim_1:Functional:tb_segment_scan8} -tclbatch {tb_segment_scan8.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source tb_segment_scan8.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1306ns
+LAB2_PASS segment_scan8 checks=194
+$finish called at time : 1306 ns : File "C:/Users/gaeun/Desktop/lab2_08_segment_scan/sim/tb_segment_scan8.sv" Line 19
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_segment_scan8_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1306ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1925.828 ; gain = 0.000
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7s75fgga484-1
+Top: lab2_segment_scan
+INFO: [Device 21-403] Loading part xc7s75fgga484-1
+INFO: [Designutils 20-5008] Incremental synthesis strategy default
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 32056
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:09 . Memory (MB): peak = 2466.238 ; gain = 540.410
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'lab2_segment_scan' [C:/Users/gaeun/Desktop/lab2_08_segment_scan/src/lab2_segment_scan.v:4]
+INFO: [Synth 8-6157] synthesizing module 'input_frontend' [C:/Users/gaeun/Desktop/lab2_08_segment_scan/src/input_frontend.v:4]
+	Parameter STABLE_CYCLES bound to: 20 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'input_frontend' (0#1) [C:/Users/gaeun/Desktop/lab2_08_segment_scan/src/input_frontend.v:4]
+INFO: [Synth 8-6157] synthesizing module 'segment_scan8' [C:/Users/gaeun/Desktop/lab2_08_segment_scan/src/segment_scan8.v:4]
+INFO: [Synth 8-226] default block is never used [C:/Users/gaeun/Desktop/lab2_08_segment_scan/src/segment_scan8.v:26]
+INFO: [Synth 8-6155] done synthesizing module 'segment_scan8' (0#1) [C:/Users/gaeun/Desktop/lab2_08_segment_scan/src/segment_scan8.v:4]
+INFO: [Synth 8-6155] done synthesizing module 'lab2_segment_scan' (0#1) [C:/Users/gaeun/Desktop/lab2_08_segment_scan/src/lab2_segment_scan.v:4]
+WARNING: [Synth 8-3917] design lab2_segment_scan has port led[7] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_segment_scan has port led[6] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_segment_scan has port led[5] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_segment_scan has port led[4] driven by constant 0
+WARNING: [Synth 8-3917] design lab2_segment_scan has port led[3] driven by constant 0
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2583.461 ; gain = 657.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2583.461 ; gain = 657.633
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 2583.461 ; gain = 657.633
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2583.461 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/gaeun/Desktop/lab2_08_segment_scan/constraints/lab2_segment_scan.xdc]
+Finished Parsing XDC File [C:/Users/gaeun/Desktop/lab2_08_segment_scan/constraints/lab2_segment_scan.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2584.621 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:28 ; elapsed = 00:00:23 . Memory (MB): peak = 2921.297 ; gain = 995.469
+14 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:30 ; elapsed = 00:00:27 . Memory (MB): peak = 2921.297 ; gain = 995.469
+launch_runs synth_1 -jobs 7
+[Wed Sep 16 14:52:52 2026] Launched synth_1...
+Run output will be captured here: C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 7
+[Wed Sep 16 14:56:08 2026] Launched impl_1...
+Run output will be captured here: C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 7
+[Wed Sep 16 14:58:07 2026] Launched impl_1...
+Run output will be captured here: C:/Users/gaeun/Desktop/lab2_08_segment_scan/vivado/lab2_segment_scan.runs/impl_1/runme.log
+close_design
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2957.113 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2026.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 2957.113 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3278.676 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3278.676 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3278.676 ; gain = 0.000
+Read placeStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 3291.762 ; gain = 13.086
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3291.762 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3291.762 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 3291.762 ; gain = 13.086
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.046 . Memory (MB): peak = 3291.762 ; gain = 13.086
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3291.762 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:16 ; elapsed = 00:00:14 . Memory (MB): peak = 3763.402 ; gain = 806.289
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Wed Sep 16 15:01:47 2026...
