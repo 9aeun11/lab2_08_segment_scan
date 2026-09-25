@@ -1,7 +1,0 @@
-Running: xsim.dir/lab2_segment_scan_behav/xsimk.exe -simmode gui -wdb lab2_segment_scan_behav.wdb -simrunnum 0 -socket 61280
-Design successfully loaded
-Design Loading Memory Usage: 18960 KB (Peak: 18960 KB)
-Design Loading CPU Usage: 233 ms
-Simulation completed
-Simulation Memory Usage: 19828 KB (Peak: 19828 KB)
-Simulation CPU Usage: 359 ms

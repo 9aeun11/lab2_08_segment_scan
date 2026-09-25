@@ -1,7 +1,0 @@
-Running: xsim.dir/tb_segment_scan8_behav/xsimk.exe -simmode gui -wdb tb_segment_scan8_behav.wdb -simrunnum 0 -socket 62557
-Design successfully loaded
-Design Loading Memory Usage: 18984 KB (Peak: 18984 KB)
-Design Loading CPU Usage: 139 ms
-Simulation completed
-Simulation Memory Usage: 19952 KB (Peak: 19952 KB)
-Simulation CPU Usage: 218 ms
